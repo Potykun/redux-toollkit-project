@@ -1,9 +1,9 @@
-import React, { FC } from "react"
+import React from "react"
 import { FaHeart } from "react-icons/fa"
 import { useFavorites } from "../../hooks/useFavorites"
 import styles from "./Header.module.scss"
 
-const Header: FC = () => {
+const Header = () => {
 	const favorites = useFavorites()
 	return (
 		<header className={styles.header}>
