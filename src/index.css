@@ -20,7 +20,25 @@ button {
 	border-radius: 5px;
 	cursor: pointer;
 	transition: all 0.3s ease 0s;
-	&:hover {
-		background-color: #b36a76;
-	}
+}
+button:hover {
+	background-color: #b36a76;
+}
+input {
+	border: 2px solid transparent;
+	outline: none;
+	color: #202020;
+	padding: 5px 5px;
+	margin-bottom: 5px;
+	border-radius: 5px;
+	transition: all 0.3s ease 0s;
+	display: block;
+	margin-top: 5px;
+}
+input:focus {
+	border-color: #e08594;
+}
+
+form {
+	padding: 0 10px;
 }
