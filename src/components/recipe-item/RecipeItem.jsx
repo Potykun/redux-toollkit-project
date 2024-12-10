@@ -5,7 +5,7 @@ const RecipeItem = ({ recipe }) => {
 	// const favorites = useSelector((state) => state.favorites)
 	const favorites = useFavorites()
 
-	console.log(favorites)
+	// console.log(favorites)
 	const { toggleFavorites } = useActions()
 
 	const isExists = favorites.some((r) => r.id === recipe.id)

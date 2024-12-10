@@ -4,9 +4,13 @@ import Header from "./header/Header"
 import RecipeItem from "./recipe-item/RecipeItem"
 import User from "./user/User"
 
+const userId = 1
+
 function App() {
-	const { isLoading, data } = useGetRecipesQuery()
-	console.log("data", data)
+	const { isLoading, data } = useGetRecipesQuery(undefined, {
+		skip: !userId,
+	})
+	// console.log("data", data)
 
 	return (
 		<section>
