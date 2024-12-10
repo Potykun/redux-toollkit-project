@@ -7,9 +7,12 @@ import User from "./user/User"
 const userId = 1
 
 function App() {
-	const { isLoading, data } = useGetRecipesQuery(undefined, {
-		skip: !userId,
-	})
+	const { isLoading, data } = useGetRecipesQuery(
+		null
+		// undefined, {
+		// skip: !userId,
+		// }
+	)
 	// console.log("data", data)
 
 	return (

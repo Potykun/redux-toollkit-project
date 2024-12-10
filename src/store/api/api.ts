@@ -1,5 +1,6 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react"
 import { API_URL } from "./baseUrl"
+import { IRecipe } from "../../types/recipe.types"
 
 export const api = createApi({
 	reducerPath: "api",
@@ -8,7 +9,7 @@ export const api = createApi({
 		baseUrl: API_URL,
 	}),
 	endpoints: (builder) => ({
-		getRecipes: builder.query({
+		getRecipes: builder.query<IRecipe[], null>({
 			query: () => "/?_sort=id&order=desc",
 			providesTags: () => [
 				{

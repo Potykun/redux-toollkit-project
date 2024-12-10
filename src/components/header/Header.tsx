@@ -1,4 +1,3 @@
-import React from "react"
 import { FaHeart } from "react-icons/fa"
 import { useFavorites } from "../../hooks/useFavorites"
 import styles from "./Header.module.scss"
